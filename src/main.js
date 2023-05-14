@@ -1,4 +1,8 @@
 /*
+Ninja Run
+By Steven Ren
+25 Hours
+
 When moving from menu to the actual game, I made the character throw a ninja star and split the menu screen in half like it
 was split by the ninja star. But I ran into an issue where if you restarted from the same play scene, the menu scene would still get sliced
 even though it didn't start from there. I first tried to delete it right after the tween was made but it registered as an error due

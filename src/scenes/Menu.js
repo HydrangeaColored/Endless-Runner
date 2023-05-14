@@ -10,7 +10,6 @@ class Menu extends Phaser.Scene {
         let menuConfig = {
             fontFamily: 'Comic Sans MS',
             fontSize: '28px',
-            //backgroundColor: '#F3B141',
             color: '#ffffff',
             align: 'right',
         fixedWidth: 0
@@ -21,7 +20,7 @@ class Menu extends Phaser.Scene {
         this.add.text(game.config.width/2,game.config.height/2+10+28, 'By Steven Ren', menuConfig).setOrigin(0.5,0.5);
         this.add.text(game.config.width/2,game.config.height/2+10+28+25, 'Press Enter for instructions', menuConfig).setOrigin(0.5,0.5);
         this.add.text(game.config.width/2,game.config.height/2+10+28+50, 'Press Space to Play', menuConfig).setOrigin(0.5,0.5);
-        this.add.text(game.config.width/2,game.config.height/2+10+28+50+25, 'Press (R) for instructions', menuConfig).setOrigin(0.5,0.5);
+        this.add.text(game.config.width/2,game.config.height/2+10+28+50+25, 'Press (R) for credits', menuConfig).setOrigin(0.5,0.5);
        
         keySPACE = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
         keyENTER = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ENTER);

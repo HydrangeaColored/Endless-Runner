@@ -18,7 +18,6 @@ class Play extends Phaser.Scene {
         let menuConfig = {
             fontFamily: 'Comic Sans MS',
             fontSize: '28px',
-            //backgroundColor: '#F3B141',
             color: '#ffffff',
             align: 'right',
         fixedWidth: 0
@@ -57,7 +56,6 @@ class Play extends Phaser.Scene {
                 x: { from: centerX, to: game.config.width },
                 onComplete: this.onCompleteHandler.bind(this)
             });
-            //this.throwStar();
         }
         this.net1 = new Obstacles(this, Math.floor(Math.random() * 700), 0, 'net', 0, 5, false).setOrigin(0, 0);
         this.net2 = new Obstacles(this, Math.floor(Math.random() * 700), 0, 'net', 0, 5, false).setOrigin(0, 0);

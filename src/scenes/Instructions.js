@@ -13,7 +13,6 @@ class Instructions extends Phaser.Scene {
         let menuConfig = {
             fontFamily: 'Comic Sans MS',
             fontSize: '28px',
-            //backgroundColor: '#F3B141',
             color: '#000000',
             align: 'left',
         fixedWidth: 0
@@ -31,9 +30,9 @@ class Instructions extends Phaser.Scene {
         this.add.text(game.config.width/2+100,game.config.height/4+80+100, 'Ninja stars you throw can destroy barrels but not nets so be careful!', menuConfig).setOrigin(0.5,0.5);
         this.add.text(game.config.width/2+100,game.config.height/4+80+100+25, 'You get a ninja star every 5 seconds.', menuConfig).setOrigin(0.5,0.5);
         this.add.text(game.config.width/2+100,game.config.height/4+80+100+25+25+25, 'These nets will stop your ninja dead in their tracks.', menuConfig).setOrigin(0.5,0.5);
-        this.add.text(game.config.width/2+100,game.config.height/4+80+100+25+25+25+25, 'Colliding with one will result in a gameover.', menuConfig).setOrigin(0.5,0.5);
+        this.add.text(game.config.width/2+100,game.config.height/4+80+100+25+25+25+25, 'Colliding with one will result in a game over.', menuConfig).setOrigin(0.5,0.5);
         this.add.text(game.config.width/2+100,game.config.height/4+80+100+25+25+50+40+35, 'Barrels will occassionly rain down from the sky.', menuConfig).setOrigin(0.5,0.5);
-        this.add.text(game.config.width/2+100,game.config.height/4+80+100+25+25+50+40+35+25, 'Getting hit by one means gameover as well.', menuConfig).setOrigin(0.5,0.5);
+        this.add.text(game.config.width/2+100,game.config.height/4+80+100+25+25+50+40+35+25, 'Getting hit by one means game over as well.', menuConfig).setOrigin(0.5,0.5);
         this.add.text(game.config.width/2+100,game.config.height/4+80+100+25+25+50+40+35+25+25, 'You can destroy barrels with your ninja stars and get additional points.', menuConfig).setOrigin(0.5,0.5);
         menuConfig.fontSize=28;
         this.add.text(game.config.width/2,game.config.height*9/10, "Press Enter to go back to menu", menuConfig).setOrigin(0.5,0.5);
